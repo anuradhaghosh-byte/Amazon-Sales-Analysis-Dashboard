@@ -47,8 +47,14 @@ The raw data was cleaned and transformed using Power Query in Power BI:
 1. **Overview** – Cover page with project summary
 2. **Product View** – Revenue, quantity sold, and discount analysis by product category and region
 3. **Customer Rating** – Customer count, rating distribution, and revenue by rating
+   
+## Dashboard link 
+https://github.com/anuradhaghosh-byte/Amazon-Sales-Analysis-Dashboard/blob/main/amazon2.pbix
 
 ## 📸 Screenshots
+<img width="1421" height="802" alt="OVERVIEW" src="https://github.com/user-attachments/assets/872841b4-8182-479f-9347-95fd0c8a7c75" />
+<img width="1532" height="871" alt="PRODUCT VIEW" src="https://github.com/user-attachments/assets/03dc75e1-8b1d-4b3a-bee6-abd1aecdc191" />
+<img width="1542" height="871" alt="CUSTOMER RATING VIEW" src="https://github.com/user-attachments/assets/9a7910a8-0cbe-41d4-b8cd-448701871227" />
 
 
 ## 📈 Key Insights
