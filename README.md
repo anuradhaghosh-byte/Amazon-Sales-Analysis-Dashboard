@@ -11,19 +11,23 @@ The goal of this project is to build an interactive, multi-page Power BI dashboa
 - **Excel** – Data cleaning, preparation, and validation
 
 ## 📁 Data Source
-
+https://www.kaggle.com/datasets/aliiihussain/amazon-sales-dataset
 
 ## 📁 Dataset
 The analysis is based on order data including:
-- Product category
-- Region
-- Order date
-- Quantity sold
-- Unit price
-- Discount percentage
-- Revenue
-- Payment method
-- Customer rating
+order_id,
+order_date, 
+product_id,
+product_category,
+price, 
+discount_percent,
+discounted_price,
+quantity_sold, 
+total_revenue, 
+customer_region,
+payment_method, 
+rating, 
+review_count
 
 ## 🧹 Data Cleaning (Power Query)
 The raw data was cleaned and transformed using Power Query in Power BI:
@@ -37,12 +41,11 @@ The raw data was cleaned and transformed using Power Query in Power BI:
 
 ## 📐 Key Measures (DAX)
 
-- Total Revenue = SUM(Sales[Revenue])
-- MTD Revenue = TOTALMTD([Total Revenue], Calendar[Date])
-- YTD Revenue = TOTALYTD([Total Revenue], Calendar[Date])
-- Average Discount % = AVERAGE(Sales[Discount_Percentage])
-- Average Rating = AVERAGE(Sales[Rating])
-
+- TOTAL REVENUE = SUM('amazon-1'[REVENUE])
+- TOTAL QUANTITY SOLD = SUM('amazon-1'[QUANTITU_SOLD])
+- YTD REVENUE = TOTALYTD(SUM('amazon-1'[REVENUE]),'amazon-1'[ORDER_DATE])
+- AVERAGE DISCOUNT % = AVERAGE('amazon-1'[DISCOUNT_%])
+  
 ## 📄 Dashboard Pages
 1. **Overview** – Cover page with project summary
 2. **Product View** – Revenue, quantity sold, and discount analysis by product category and region
@@ -67,7 +70,5 @@ https://github.com/anuradhaghosh-byte/Amazon-Sales-Analysis-Dashboard/blob/main/
 **Anuradha Ghosh**
 B.Sc. in Biosciences | Aspiring Data Analyst
 Skills: Excel, Power BI
-
-## 🔗 Connect
 
 Feel free to reach out for feedback or collaboration!
